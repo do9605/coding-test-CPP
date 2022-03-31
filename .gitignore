@@ -1,0 +1,6 @@
+.vscode
+.gitignore.un~
+..gitignore.un~
+.gitignore~
+
+*.exe
