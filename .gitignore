@@ -4,3 +4,5 @@
 .gitignore~
 
 *.exe
+
+.idea/
