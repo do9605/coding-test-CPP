@@ -12,6 +12,7 @@ int main() {
     }
 
     max = arr[0];
+    idx = 0;
 
     for(int i=1; i<9; i++){
         if (max < arr[i]) {
@@ -20,6 +21,6 @@ int main() {
         }
     }
 
-    cout << max << endl << idx << endl;
+    cout << max << endl << idx+1 << endl;
     return 0;
 }
