@@ -3,13 +3,16 @@
 using namespace std;
 
 void quicksort(int* arr, int start, int end) {
+	if (start >= end)
+		return;
+
 	int pivot = start;
-	int i = start+1;
+	int i = start + 1;
 	int j = end;
 	int temp;
 
-	while (i<=j) {
-		while (arr[i] <= arr[pivot]) {
+	while (i <= j) {
+		while (arr[i] <= arr[pivot] && (i <= end)) {
 			i++;
 		}
 		while ((arr[j] >= arr[pivot]) && (j > start)) {
@@ -45,9 +48,9 @@ int main() {
 
 	quicksort(arr, 0, num - 1);
 
-	/*for (int i = 0; i < num; i++) {
-		cout << arr[i];
-	}*/
+	for (int i = 0; i < num; i++) {
+		cout << arr[i] << '\n';
+	}
 
 	delete[] arr;
 
